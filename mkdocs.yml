@@ -18,7 +18,6 @@ copyright: Copyright &copy; Mike Bailey
 
 not_in_nav: |
   *animalwelfare*
-  *What's this?*
 
 theme:
   name: material
@@ -92,28 +91,8 @@ plugins:
       pagination_per_page: 10
       post_readtime: true
   - search
-  - rss:
-      abstract_chars_count: -1  # Include full content
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-      comments_path: "#__comments"
-      enabled: true
-      feed_ttl: 1440
-      image: https://mike.bailey.net.au/assets/favicon.png
-      length: 20
-      pretty_print: false
-      match_path: "blog/posts/.*"
-      url_parameters:
-        utm_source: "rss"
-        utm_medium: "feed"
-        utm_campaign: "feed-syndication"
-      full_content_in_item: true  # Ensure full content is included
-      image_in_content: true  # Include images in content
   - redirects:
       redirect_maps:
-        "README.md" : "notes/README.md"
         "2007/05/enable-ssh-agent-forwarding-for-capistrano.md": "blog/posts/2007-05-14-enable-ssh-agent-forwarding-for-capistrano.md"
         "2007/05/integrating-wordpress-into-a-ruby-on-rails-site.md": "blog/posts/2007-05-12-integrating-wordpress-into-a-ruby-on-rails-site.md"
         "2007/07/deprec-plugins-using-gem_plugin.md": "blog/posts/2007-07-09-deprec-plugins-using-gem_plugin.md"
@@ -190,10 +169,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mbailey
-    - icon: fontawesome/solid/rss
-      link: /feed_rss_created.xml
-      name: RSS Feed
-  homepage: notes/
+  homepage: notes/notes/
 
 # Extensions
 markdown_extensions:
