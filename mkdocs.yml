@@ -16,9 +16,6 @@ repo_url: https://github.com/mbailey/mbailey.github.io
 # Copyright
 copyright: Copyright &copy; Mike Bailey
 
-not_in_nav: |
-  *animalwelfare*
-
 theme:
   name: material
   # custom_dir: mkdocs-material/material
