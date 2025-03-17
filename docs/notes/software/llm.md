@@ -1,28 +1,31 @@
 # llm CLI tool
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QUXQNi6jQ30?si=76gokuY2HabmVYde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 - [LLM A CLI utility and Python library for interacting with Large Language Models (llm.datasette.io)](https://llm.datasette.io/en/stable/)
 - [Changelog - LLM (llm.datasette.io)](https://llm.datasette.io/en/stable/changelog.html)
 - [Prompt templates - LLM (llm.datasette.io)](https://llm.datasette.io/en/stable/templates.html)
 
 ## Cool tricks
 
+````shell
 ```shell
-llm prompt "how to restart prometheus as I have updated the config file that is
-shared to the container: $(<docker-compose.yml)" 
-```
+llm prompt "how to restart prometheus as I have updated the config file that is shared to the container: $(<docker-compose.yml)"
+````
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QUXQNi6jQ30?si=76gokuY2HabmVYde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Installation
 
 ```bash
 pipx install llm
 llm install llm-cmd llm-anthropic llm-ollama
+llm models default claude-3.7-sonnet
 ```
 
 ## Usage
 
-## Set model
+```shell
+llm prompt "how to restart prometheus as I have updated the config file that is shared to the container: $(<docker-compose.yml)"
+```
 
 ```shell
 llm models default claude-3.7-sonnet
@@ -40,7 +43,24 @@ spaces in filenames and it's linux: fd Leopold"
 
 ```shell
 # Chat with history
-llm chat --model claude-3.5-sonnet --history previous_chat.json "your message"
+llm chat --history previous_chat.json "your message"
+```
+
+## Run a Command
+
+```shell
+llm cmd list files in /tmp
+> ls /tmp
+```
+
+## Embed
+
+```shell
+llm embed -m 3-small -c "Hello there"
+```
+
+```
+
 ```
 
 ## List models
@@ -59,17 +79,4 @@ Anthropic Messages: claude-3-haiku-20240307 (aliases: claude-3-haiku)
 Anthropic Messages: claude-3-5-sonnet-20240620 (aliases: claude-3.5-sonnet)
 Ollama: llama3.2:latest (aliases: llama3.2)
 Ollama: llama3.1:70b
-```
-
-## Run a Command
-
-```shell
-llm cmd list files in /tmp
-> ls /tmp
-```
-
-## Embed
-
-```shell
-llm embed -m 3-small -c "Hello there"
 ```

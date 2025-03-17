@@ -11,7 +11,7 @@ notes() {
   cd "${NOTES_DIR:=$HOME/Notes}"
 
   # Use fd to find files (excluding ignored files)
-  selected_file=$(fd --type f --no-ignore | fzf --query "$initial_query" --preview-window=hidden)
+  selected_file=$(fd -L --type f --no-ignore | fzf --query "$initial_query" --preview-window=hidden)
 
   if [[ -n "$selected_file" ]]; then
     local editor="${VISUAL:-${EDITOR:-vim}}"
