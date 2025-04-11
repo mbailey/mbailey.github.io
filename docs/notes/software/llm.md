@@ -6,27 +6,33 @@
 - [Changelog - LLM (llm.datasette.io)](https://llm.datasette.io/en/stable/changelog.html)
 - [Prompt templates - LLM (llm.datasette.io)](https://llm.datasette.io/en/stable/templates.html)
 
+## Cool tricks
+
 ```shell
-llm prompt "how to restart prometheus as I have updated the config file that is shared to the container: $(<docker-compose.yml)"
+llm prompt "how to restart prometheus as I have updated the config file that is
+shared to the container: $(<docker-compose.yml)" 
 ```
 
 ## Installation
 
 ```bash
-# Install
 pipx install llm
-llm install llm-cmd llm-claude-3 llm-ollama
+llm install llm-cmd llm-anthropic llm-ollama
 ```
 
 ## Usage
 
 ## Set model
 
+```shell
+llm models default claude-3.7-sonnet
+```
+
 ### Natural Language Commands
 
 ```shell
- llm cmd "delete all files returned by this command, 
-  respecting that some have spaces in filenames and it's linux: fd Leopold"
+ llm cmd "delete all files returned by this command, respecting that some have
+spaces in filenames and it's linux: fd Leopold"
 > fd Leopold -X rm -f {}
 ```
 
