@@ -1,8 +1,12 @@
 # GnuPG
 
+
 [GNU Privacy Guard](https://gnupg.org/)
 
-List the keys a file is encrypted for:
+
+## Usage
+
+**List the keys a file is encrypted for:**
 
     $ gpg example.gpg
     gpg: WARNING: no command supplied.  Trying to guess what you mean ...
@@ -14,16 +18,16 @@ List the keys a file is encrypted for:
           "Mike 3 <mike3@example.com>"
 
 
-Edit trust on a key:
+**Edit trust on a key:**
 
     $ gpg --edit-key 0x1234567812345678
 
-Import a key from github:
+**Import a key from github:**
 
     wget https://github.com/mbailey.gpg
     gpg --import ./mbailey.gpg
 
-## Create a new key
+**Create a new key:**
 
 - [Creating GPG Keys  Fedora Docs (docs.fedoraproject.org)](https://docs.fedoraproject.org/en-US/quick-docs/create-gpg-keys/)
 
@@ -31,15 +35,13 @@ Import a key from github:
 gpg --full-generate-key
 ```
 
-## Delete a key
-
-Delete Public:
+**Delete public key:**
 ```
 gpg --list-keys
 gpg --delete-keys [key-id]
 ```
 
-Delete Secret/Private:
+**Delete secret/private key:**
 ```
 gpg --list-secret-keys
 gpg --delete-secret-keys [key-id]
