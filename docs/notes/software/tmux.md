@@ -40,3 +40,7 @@ tmux is a terminal multiplexer. It lets you switch easily between several progra
 `tmux source-file ~/.tmux.conf`: source changes without restarting session
 
 `tmux new-session -d -s work -n InitialWindow`: Create session in detached mode
+
+## Clipboard
+
+https://github.com/tmux/tmux/wiki/Clipboard#quick-summary

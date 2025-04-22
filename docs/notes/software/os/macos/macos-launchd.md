@@ -1,11 +1,13 @@
 ---
 alias: macOS Launch Daemons
 ---
+
 # macOS launchd
 
 - https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html
 
 **Troubleshoot plist**: `plutil -lint ~/Library/LaunchAgents/com.ollama.service.plist`
+
 ## Commands
 
 ### Find an agent
@@ -13,7 +15,6 @@ alias: macOS Launch Daemons
 ```shell
 sudo find /Library/LaunchAgents /Library/LaunchDaemons /System/Library/LaunchAgents /System/Library/LaunchDaemons -name "*whisperserver*"
 ```
-
 
 ## Stop
 
