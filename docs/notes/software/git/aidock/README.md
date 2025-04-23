@@ -6,7 +6,7 @@
 ## Overview
 
 AIdock is a safety protocol tool designed to protect sensitive project data
-before an AI coding assistant is allowed to interact with a file directory.
+before an AI coding ASSISTANT is allowed to interact with a file directory.
 
 1. **Preserve data integrity**: Ensure all necessary backups are in place
 1. **Ensure Confidentiality and Integrity of Sensitive Data**
@@ -14,7 +14,7 @@ before an AI coding assistant is allowed to interact with a file directory.
 
 - Require explicit user confirmation before access is granted
 
-Think of it as an airlock between your codebase and the assistant — only opening once
+Think of it as an airlock between your codebase and the ASSISTANT — only opening once
 it’s safe to do so.
 
 ## Glossary
@@ -29,8 +29,8 @@ it’s safe to do so.
 
 To protect against data loss and facilitate audit / recovery:
 
-- The target directory must be backed up before granting access
-- The ASSISTANT must no be able to modify the backup
+- TARGET_DIR must be backed up before granting access
+- ASSISTANT must no be able to modify the backup
 
 ### Actions
 
