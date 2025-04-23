@@ -1,4 +1,4 @@
-# AIdock - AI Assistant Safety Precheck Protocol
+# AIdock - AI Assistant Safety Precheck Protocol [DRAFT]
 
 > _Before allowing Cylons to dock on Galactica, safety protocols must be
 > followed to secure the hangar and preserve mission integrity._
@@ -125,3 +125,7 @@ Prefer verifiable external system controls over promises from ASSISTANT.
 - **Confirmation Required:** Present a summary of backup status and audit results before allowing access.
 - **User Approval:** Require explicit user confirmation to continue (e.g., prompt or command-line flag).
 - **Logging:** Record tool operations, flagged files, and user decisions in a local log file for audit and traceability.
+
+## Revisions
+
+2025-04-23 First rough cut
