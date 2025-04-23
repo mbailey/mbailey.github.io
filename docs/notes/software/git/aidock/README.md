@@ -9,10 +9,9 @@ AIdock is a safety protocol tool designed to protect sensitive project data
 before an AI coding ASSISTANT is allowed to interact with a file directory.
 
 1. **Preserve data integrity**: Ensure all necessary backups are in place
-1. **Ensure Confidentiality and Integrity of Sensitive Data**
+1. **Protect confidentiality of sensitive data**
 1. **Ensure ASSISTANT actions/changes are traceable**
-
-- Require explicit user confirmation before access is granted
+1. **Require explicit user confirmation before access is granted**
 
 Think of it as an airlock between your codebase and the ASSISTANT — only opening once
 it’s safe to do so.
@@ -68,7 +67,7 @@ Some ideas for review:
 - Set up filesystem monitoring for changes to `.git/` directory
 - Use separate git user with limited permissions for ASSISTANT operations
 
-## 2. Ensure Confidentiality and Integrity of Sensitive Data
+## 2. Protect Confidentiality of Sensitive Data
 
 To protect against inappropriate access or modification by ASSISTANT,
 categorize appropriate access permissions (read, write, none),
@@ -103,9 +102,7 @@ Prefer verifiable external system controls over promises from ASSISTANT.
 - Code changes made by ASSISTANT should be reviewed being merged into main/master branch.
 - It should be easy to review all actions taken by ASSISTANT.
 
-#### ASSISTANT Should Not Impersonate You
-
-## Implementation
+#### ASSISTANT should not impersonate you
 
 - **Sign your own commits with a hardware security key**: ASSISTANT won't have access.
 - **Identify ASSISTANT in commit message author field**: e.g. `Mike Bailey (Aider) <mike@failmode.com>`
@@ -113,12 +110,10 @@ Prefer verifiable external system controls over promises from ASSISTANT.
 - **Don't allow ASSISTANT to assume your identity with GITHOST CLI tools:** e.g. GitHub CLI
 - **Maybe run ASSISTANT under a different computer user account?**
 
-#### Restrict ASSISTANT to a limited set of Git branches
+#### ASSISTANT commits should be restricted a limited set of Git branches
 
 - **ASSISTANT changes should not be committed directly to `main/master` branch.**
 - **ASSISTANT changes should be committed well named branches:** [AI Branch Naming Conventions](./ai-branch-naming-conventions.md)
-
-#### Actions
 
 ## 4. User Acknowledgment and Logging
 
