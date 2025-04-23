@@ -1,5 +1,6 @@
 ---
 draft: true
+date: 2025-04-23
 ---
 
 Give a man a fish and he'll eat for a day.

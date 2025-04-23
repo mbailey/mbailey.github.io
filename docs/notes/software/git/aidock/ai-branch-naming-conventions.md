@@ -6,7 +6,7 @@ When working with AI coding assistants, using a consistent branch naming convent
 
 Based on the project's principles and best practices, here are recommended branch naming conventions for AI coding assistant sessions:
 
-> For a detailed discussion about including parent branch names in your branches, see [Parent Branch References in AI Branch Naming](../../../branches/ai-branch-parent-naming.md).
+> For a detailed discussion about including parent branch names in your branches, see [Parent Branch References in AI Branch Naming](./ai-branch-parent-naming.md).
 
 1. **`ai/agent-name/task-description`**
 
@@ -47,3 +47,4 @@ When implementing these naming conventions:
 3. Consider automating branch name creation through your AI safety tooling
 4. Enforce the convention through tooling like git hooks or repository settings
 5. Include the convention in onboarding documentation for all team members
+
