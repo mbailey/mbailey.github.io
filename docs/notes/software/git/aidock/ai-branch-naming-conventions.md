@@ -47,4 +47,3 @@ When implementing these naming conventions:
 3. Consider automating branch name creation through your AI safety tooling
 4. Enforce the convention through tooling like git hooks or repository settings
 5. Include the convention in onboarding documentation for all team members
-

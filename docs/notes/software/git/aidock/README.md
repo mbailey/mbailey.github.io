@@ -8,9 +8,10 @@
 AIdock is a safety protocol tool designed to protect sensitive project data
 before an AI coding assistant is allowed to interact with a file directory.
 
-- Ensures all necessary backups are in place
-- Audit for potentially sensitive data
-- Ensure auditability of ASSISTANT
+1. **Preserve data integrity**: Ensure all necessary backups are in place
+1. **Ensure Confidentiality and Integrity of Sensitive Data**
+1. **Ensure ASSISTANT actions/changes are traceable**
+
 - Require explicit user confirmation before access is granted
 
 Think of it as an airlock between your codebase and the assistant — only opening once
@@ -97,7 +98,7 @@ Prefer verifiable external system controls over promises from ASSISTANT.
   - Always check `.gitignore` as a fallback.
 - **Action:** Flag potentially sensitive files and present options to exclude them or proceed with a warning.
 
-### 3. Ensure ASSISTANT Actions are auditable
+### 3. Ensure ASSISTANT Actions are traceable
 
 - Code changes made by ASSISTANT should be reviewed being merged into main/master branch.
 - It should be easy to review all actions taken by ASSISTANT.
